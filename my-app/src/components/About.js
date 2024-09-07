@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function About(props) {
 
@@ -11,7 +11,7 @@ export default function About(props) {
         <div className='container'>
             <h2 className='my-3' style={myStyle}>About Us</h2>
             <div className="accordion" id="accordionExample">
-                <div className="accordion-item" style={myStyle}>
+                <div className="accordion-item">
                     <h2 className="accordion-header">
                     <button className="accordion-button" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Accordion Item #1
@@ -23,10 +23,9 @@ export default function About(props) {
                         </div>
                     </div>
                 </div>
-                <div className="accordion-item" style={myStyle}>
+                <div className="accordion-item">
                     <h2 className="accordion-header">
-                    <button className="accord
-                    ion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Accordion Item #2
                     </button>
                     </h2>
@@ -36,7 +35,7 @@ export default function About(props) {
                         </div>
                     </div>
                 </div>
-                <div className="accordion-item" style={myStyle}>
+                <div className="accordion-item">
                     <h2 className="accordion-header">
                     <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Accordion Item #3
