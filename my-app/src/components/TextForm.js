@@ -5,18 +5,22 @@ export default function TextForm(props) {
     const handleUpperClick = () => {
         const newUpperCase = text.toUpperCase();
         setText(newUpperCase);
+        props.showAlert('Converted to Upper case', 'success');
     }
     const handleLowerClick = () => {
         const newUpperCase = text.toLowerCase();
         setText(newUpperCase);
+        props.showAlert('Converted to Lower case', 'success');
     }
     const handleClearClick = () => {
         setText('');
+        props.showAlert('Clicked on clear text', 'success');
     }
     const speak = () => {
         let msg = new SpeechSynthesisUtterance();
         msg.text = text;
         window.speechSynthesis.speak(msg);
+        props.showAlert('Speak button is clicked', 'warning');
       }
     const handleOnChange = (event) => {
         setText(event.target.value);

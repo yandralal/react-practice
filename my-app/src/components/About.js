@@ -46,7 +46,8 @@ export default function About() {
                 </div>
                 <div className="accordion-item" style={myStyle}>
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accord
+                    ion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Accordion Item #2
                     </button>
                     </h2>
