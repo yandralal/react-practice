@@ -33,14 +33,14 @@ export default function TextForm(props) {
                     <textarea className="form-control" value={text}
                     onChange={handleOnChange} id="myTextArea" rows="8"></textarea>
                 </div>
-                <button className="btn btn-primary mx-2" onClick={handleUpperClick}>Convert to Uppercase</button>
-                <button className="btn btn-primary mx-2" onClick={handleLowerClick}>Convert to Lowercase</button>
-                <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear Text</button>
-                <button type="submit" onClick={speak} className="btn btn-warning mx-2 my-2">Speak</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleUpperClick}>Convert to Uppercase</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleLowerClick}>Convert to Lowercase</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleClearClick}>Clear Text</button>
+                <button type="submit" onClick={speak} className="btn btn-warning mx-2 my-2 my-1">Speak</button>
             </div> 
             <div className="container my-3">
                 <h4>Your Text Summary</h4>
-                <p>{text.split(' ').length} words and {text.length} characters</p>
+                <p>{text.split(' ').filter((element) => {return element.length !== 0}).length} words and {text.length} characters</p>
                 <p>{0.008 * text.split(' ').length} minutes to read</p>
                 <p>Preview</p>
                 <h4>{text}</h4>
